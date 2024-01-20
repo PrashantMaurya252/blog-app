@@ -25,10 +25,10 @@ function OAuth() {
                 }),
             })
 
-            const data=res.json()
+            const data=await res.json()
             if(res.ok){
                 dispatch(signInSuccess(data))
-                navigate()
+                navigate('/')
             }
         } catch (error) {
             console.log(error)
