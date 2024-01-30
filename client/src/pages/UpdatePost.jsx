@@ -41,6 +41,7 @@ function UpdatePost() {
                       title: postData.title,
                       category: postData.category,
                       image:postData.image,
+                      content:postData.content,
                     });
                   }
             }
